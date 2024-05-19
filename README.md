@@ -10,7 +10,7 @@ This is a [Cable.cr](https://github.com/cable-cr/cable) backend extension for [s
    dependencies:
      cable:
        github: cable-cr/cable
-     cable-redis:
+     cable-redis-legacy:
        github: cable-cr/cable-redis-legacy
    ```
 
@@ -20,7 +20,7 @@ This is a [Cable.cr](https://github.com/cable-cr/cable) backend extension for [s
 
 ```crystal
 require "cable"
-require "cable-redis"
+require "cable-redis-legacy"
 
 Cable.configure do |settings|
   settings.url = ENV.fetch("CABLE_BACKEND_URL", "redis://localhost:6379")
@@ -46,7 +46,7 @@ end
 
 ## Contributing
 
-1. Fork it (<https://github.com/cable-cr/cable-redis/fork>)
+1. Fork it (<https://github.com/cable-cr/cable-redis-legacy/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
