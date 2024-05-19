@@ -1,0 +1,24 @@
+name: cable-redis-legacy
+version: 0.1.0
+
+authors:
+  - Jeremy Woertink <jeremywoertink@gmail.com>
+
+crystal: '>= 1.10.0'
+
+dependencies:
+  redis:
+    github: stefanwille/crystal-redis
+    version: ~> 2.8.0
+
+development_dependencies:
+  cable:
+    github: cable-cr/cable
+    branch: master
+    # version: ~> 0.4
+
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 1.5.0
+
+license: MIT
