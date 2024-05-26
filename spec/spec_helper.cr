@@ -1,4 +1,5 @@
 require "spec"
+require "cable"
 require "../src/cable-redis-legacy"
 require "./support/*"
 
